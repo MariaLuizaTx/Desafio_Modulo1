@@ -1,26 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,700;0,800;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;700;800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-header{
+header {
     position: fixed;
+    z-index: 2;
     width: 100%;
     height: 5em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    background-color: w;
-    
+    background-color: white;
 
-    border: 2px solid;
+
+  
 }
 
-header h1{
+header button {
+    display: none;
+}
+
+header h1 {
     width: 6.8em;
     display: flex;
     flex-direction: row;
@@ -29,108 +34,104 @@ header h1{
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
 
-    border: 2px solid;
 }
 
-header nav{
-    width: 37em;
+header nav {
+    width: 40em;
     height: 2em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
 
-    border: 2px solid;
 }
 
-header nav ul{
-    width: 30em;
+header nav ul {
+    width: 35em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    
 
-    border: 2px solid;
 }
 
 header nav ul li {
+    width: 5em;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     font-size: 1em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
     color: black;
-    transition: all 0.5s;
-    transition: 1s;
-    transition-timing-function: ease;
+    transition: 0.3s ease-in-out;
 
-    border: 2px solid;
+
 }
 
-.portifolio{
+.portifolio {
     font-weight: 700;
 }
 
-header nav ul li:hover{
+header nav ul li:hover {
     cursor: pointer;
-    font-weight: 800;    
-    transform: scale(105%);
+    font-weight: 800;
+    transform: scale(106%);
 }
 
-main .firstSection{
+main {
+    padding-top: 5em;
+
+}
+
+main .firstSectionMain {
     height: 34em;
-    
-    
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(./Assents/laranja_azul.png);
 
-    border: 2px solid;
 }
 
 
 
-main h2{
-    width: 16.3em;
+main .firstDivMain {
+    width: 22.85em;
     display: flex;
     flex-direction: row;
     justify-content: end;
     position: relative;
-    top: 4em;
+    top: 5.5em;
     color: white;
-    font-size: 3.5em;
+    font-size: 2.5em;
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
 
-    border: 2px solid;
 }
 
-main h3{
-    width: 14.3em;
+main h3 {
+    width: 12em;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     position: relative;
-    top: 17em;
+    top: 12em;
     color: white;
-    font-size: 1em;
+    font-size: 1.5em;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
-    
-    border: 2px solid;
+    transition: 0.5s ease-in-out;
+
 }
 
-main h3:hover{
+main h3:hover {
     cursor: pointer;
     text-decoration: underline;
     transform: scale(106%);
-    transition: 0.5s;
-    transition: 1s;
+
 }
 
-main .secondSection{
+main .secondSectionMain {
     height: 64em;
     display: flex;
     flex-direction: row;
@@ -138,7 +139,7 @@ main .secondSection{
     align-items: center;
 }
 
-main div{
+main .secondDivMain {
     height: 56.5em;
     width: 75.5em;
     display: flex;
@@ -149,19 +150,279 @@ main div{
 
 }
 
-main .imgDesignes{
+main .imgDesignes {
     height: 18em;
     width: 18em;
     flex-wrap: wrap;
+    transition: 0.5s ease-in-out;
 
 }
 
-footer{}
+main .imgDesignes:hover {
 
-@media(min-width: 375px)and(max-width: 667px){
+    transform: scale(106%);
+}
 
+footer {
+    height: 7em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f6f6f6;
+
+}
+
+footer .firstSectionFooter {
+    width: 26.1em;
+    height: 3em;
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+
+}
+
+footer .firstDivFooter {
+    width: 21em;
+    height: 2.5em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+footer .redesSociais {
+    height: 2em;
+    cursor: pointer;
+
+}
+
+footer .secondSectionFooter {
+    width: 50em;
+    height: 5em;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+
+}
+
+footer .secondDivFooter {
+    width: 7em;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+}
+
+footer .copyright {
+    font-size: 1em;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer .exclusivo {
+    font-size: 0.8em;
+    font-weight: 400;
+    font-family: 'Montserrat', sans-serif;
+}
+
+footer button{
+    display: none;
+}
+
+@media(max-width: 900px) {
+
+
+    header {
+        height: 3.3em;
+        width: 23.5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+
+    header button {
+        display: initial;
+        height: 2em;
+        width: 4em;
+        font-size: 1.7em;
+        color: white;
+        background-color: black;
+    }
+
+    header h1 {
+        width: 7.7em;
+        display: initial;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        font-size: 1.8em;
+
+    }
 
     header nav {
         display: none;
+    }
+
+    header nav ul {
+        display: none;
+    }
+
+    header nav ul li {
+        display: none;
+    }
+
+    main {
+        padding-top: 3.4em;
+    }
+
+    main .firstSectionMain {
+        height: 40em;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-image: url(./Assents/laranja_azul_mobile.png);
+    }
+
+    main .firstDivMain{
+        width: 10em;
+        height: 5.5em;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        top: 11em;
+        align-items: flex-start;
+        font-size: 2.2em;
+
+    }
+
+
+
+    main .imagine {
+        width: 5.4em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+
+    }
+
+    main .discuta {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 5em;
+    }
+
+    main .desenhe {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        width: 5.68em;
+    }
+
+    main h3 {
+        width: 10.6em;
+        position: relative;
+        top: 21em;
+        font-size: 1.2em;
+    }
+
+    main .secondSectionMain {
+        height: 239em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    main .secondDivMain{
+        height: 235em;
+        width: 20em;
+        display: flex;
+        flex-direction: column;
+    }
+
+    main .imgDesignes{
+        transition: 0.5s;
+    }
+
+    main .imgDesignes:hover{
+        transform: scale(106%);
+    }
+
+    footer {
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: white;
+
+
+
+    }
+
+    footer .firstSectionFooter {
+        width: 20em;
+        height: 5em;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+
+
+    }
+
+    footer .firstDivFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        background-color: #7FDBD4;
+
+
+    }
+
+
+
+    footer .secondSectionFooter {
+        width: 20em;
+        height: 8.6em;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+
+    }
+
+    footer .copyright {
+        width: 10em;
+        font-size: 0.9em;
+
+    }
+
+    footer .exclusivo {
+        width: 14em;
+        height: 5em;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+    footer button {
+        display: initial;
+        cursor: pointer;
+        width: 4em;
+        color: #CCCCCC;
+        font-size: 1.2em;
+        font-weight: 400;
+        font-family: 'Montserrat', sans-serif;
+        background-color: #333333;
+        border: #707070;
+        position: relative;
+        top: -4em;
+        right: -12em;
     }
 }
