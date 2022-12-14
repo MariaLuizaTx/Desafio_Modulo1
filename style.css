@@ -238,31 +238,35 @@ footer button{
 
 
     header {
-        height: 3.3em;
-        width: 23.5em;
+        height: 3em;
+        width: 19.7em;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
 
+        border: 2px solid;
     }
 
     header button {
         display: initial;
-        height: 2em;
-        width: 4em;
+        height: 1.8em;
+        width: 3em;
         font-size: 1.7em;
         color: white;
         background-color: black;
     }
 
     header h1 {
-        width: 7.7em;
+        width: 7em;
         display: initial;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
         font-size: 1.8em;
+
+        border: 2px solid;
+
 
     }
 
@@ -279,11 +283,12 @@ footer button{
     }
 
     main {
-        padding-top: 3.4em;
+        padding-top: 0;
     }
 
     main .firstSectionMain {
-        height: 40em;
+        height: 39em;
+        width: 19.7em;
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(./Assents/laranja_azul_mobile.png);
@@ -295,16 +300,16 @@ footer button{
         display: flex;
         flex-direction: column;
         position: relative;
-        top: 11em;
+        top: 13.89em;
         align-items: flex-start;
-        font-size: 2.2em;
+        font-size: 1.7em;
 
     }
 
 
 
     main .imagine {
-        width: 5.4em;
+        width: 5.3em;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
@@ -315,25 +320,26 @@ footer button{
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 5em;
+        width: 4.99em;
     }
 
     main .desenhe {
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 5.68em;
+        width: 5.64em;
     }
 
     main h3 {
-        width: 10.6em;
+        width: 9.8em;
         position: relative;
-        top: 21em;
+        top: 20em;
         font-size: 1.2em;
     }
 
     main .secondSectionMain {
         height: 239em;
+        width: 19.7em;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -343,12 +349,14 @@ footer button{
 
     main .secondDivMain{
         height: 235em;
-        width: 20em;
+        width: 18em;
         display: flex;
         flex-direction: column;
     }
 
     main .imgDesignes{
+        height: 17em;
+        width: 17em;
         transition: 0.5s;
     }
 
@@ -357,18 +365,18 @@ footer button{
     }
 
     footer {
-        height: 17em;
+        height: 14em;
+        width: 19.7em;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         background-color: white;
 
 
-
     }
 
     footer .firstSectionFooter {
-        width: 20em;
+        width: 19.7em;
         height: 5em;
         display: flex;
         flex-direction: row;
@@ -377,7 +385,10 @@ footer button{
 
     }
 
+   
+
     footer .firstDivFooter {
+        width: 17em;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
@@ -386,11 +397,13 @@ footer button{
 
     }
 
-
+ footer .redesSociais{
+        height: 1.8em;
+    }
 
     footer .secondSectionFooter {
-        width: 20em;
-        height: 8.6em;
+        width: 17em;
+        height: 9.8em;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -410,6 +423,7 @@ footer button{
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
+
     }
 
     footer button {
@@ -423,7 +437,8 @@ footer button{
         background-color: #333333;
         border: #707070;
         position: relative;
-        top: -4em;
-        right: -12em;
+        top: -4.5em;
+        right: -9.8em;
+
     }
 }
