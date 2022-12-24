@@ -8,18 +8,15 @@
 }
 
 header {
-    position: fixed;
-    z-index: 2;
+    height: 15vh;
     width: 100%;
-    height: 5em;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    z-index: 2;
     background-color: white;
-
-
-  
 }
 
 header button {
@@ -27,37 +24,34 @@ header button {
 }
 
 header h1 {
-    width: 6.8em;
+    width: 20vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-size: 2.5em;
     font-family: 'Montserrat', sans-serif;
     font-weight: 700;
-
 }
 
 header nav {
-    width: 40em;
-    height: 2em;
+    height: 5vh;
+    width: 50vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: flex-start;
-
 }
 
 header nav ul {
-    width: 35em;
+    width: 40vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
 header nav ul li {
-    width: 5em;
+    width: 7vw;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -66,8 +60,6 @@ header nav ul li {
     font-weight: 200;
     color: black;
     transition: 0.3s ease-in-out;
-
-
 }
 
 .portifolio {
@@ -81,141 +73,126 @@ header nav ul li:hover {
 }
 
 main {
-    padding-top: 5em;
-
+    padding-top: 11vh;
 }
 
 main .firstSectionMain {
-    height: 34em;
+    height: 96.8vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     background-image: url(./Assents/laranja_azul.png);
-
 }
 
 
 
 main .firstDivMain {
-    width: 22.85em;
+    width: 67vw;
     display: flex;
     flex-direction: row;
     justify-content: end;
     position: relative;
-    top: 5.5em;
-    color: white;
+    top: 37vh;
     font-size: 2.5em;
     font-weight: 800;
     font-family: 'Montserrat', sans-serif;
-
+    color: white;
 }
 
 main h3 {
-    width: 12em;
+    width: 21vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     position: relative;
-    top: 12em;
-    color: white;
+    top: 46vh;
     font-size: 1.5em;
     font-weight: 200;
     font-family: 'Montserrat', sans-serif;
-    transition: 0.5s ease-in-out;
-
+    color: white;
+    transition:all 0.5s ease-in-out;
 }
 
 main h3:hover {
     cursor: pointer;
     text-decoration: underline;
     transform: scale(106%);
-
 }
 
 main .secondSectionMain {
-    height: 64em;
+    height: 160vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
 }
 
-main .secondDivMain {
-    height: 56.5em;
-    width: 75.5em;
+main .thirdSectionMain {
+    height: 142vh;
+    width: 85vw;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-evenly;
-
-
 }
 
 main .imgDesignes {
-    height: 18em;
-    width: 18em;
+    height: 45vh;
+    width: 20vw;
     flex-wrap: wrap;
     transition: 0.5s ease-in-out;
-
 }
 
 main .imgDesignes:hover {
-
     transform: scale(106%);
 }
 
 footer {
-    height: 7em;
+    height: 15vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: #f6f6f6;
-
 }
 
 footer .firstSectionFooter {
-    width: 26.1em;
-    height: 3em;
+    height: 6vh;
+    width: 30vw;
     display: flex;
     flex-direction: row;
     justify-content: end;
     align-items: center;
-
 }
 
-footer .firstDivFooter {
-    width: 21em;
-    height: 2.5em;
+footer .secondSectionFooter {
+    height: 5vh;
+    width: 22vw;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-
 }
 
 footer .redesSociais {
-    height: 2em;
+    height: 4vh;
     cursor: pointer;
-
 }
 
-footer .secondSectionFooter {
-    width: 50em;
-    height: 5em;
+footer .thirdSectionFooter {
+    height: 10vh;
+    width: 60vw;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-
 }
 
-footer .secondDivFooter {
-    width: 7em;
+footer .firstDivFooter {
+    width: 10vw;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-
 }
 
 footer .copyright {
@@ -234,39 +211,37 @@ footer button{
     display: none;
 }
 
-@media(max-width: 700px) {
+@media(min-width:201px) and (max-width: 500px){
 
 
     body{
         width: 100%;
     }
+
     header {
-        height: 3em;
+        height: 8vh;
         width: 100%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-
     }
 
     header button {
         display: initial;
-        height: 1.8em;
-        width: 3em;
-        font-size: 1.7em;
+        height: 8vh;
+        width: 22vw;
+        font-size: 2em;
         color: white;
         background-color: black;
     }
 
     header h1 {
-        width: 7em;
-        display: initial;
+        width: 65vw;
         display: flex;
         flex-direction: row;
         align-items: center;
         justify-content: flex-start;
-        font-size: 1.8em;
-
+        font-size: 2em;
     }
 
     header nav {
@@ -282,12 +257,11 @@ footer button{
     }
 
     main {
-        padding-top: 0;
-        
+        padding-top: 8vh;
     }
 
     main .firstSectionMain {
-        height: 39em;
+        height: 95vh;
         width: 100%;
         background-position: center;
         background-repeat: no-repeat;
@@ -295,68 +269,64 @@ footer button{
     }
 
     main .firstDivMain{
-        width: 10em;
-        height: 5.5em;
+        width: 15vw;
         display: flex;
         flex-direction: column;
-        position: relative;
-        top: 13.89em;
         align-items: flex-start;
+        position: relative;
+        top: 57vh;
         font-size: 1.7em;
-
     }
-
 
 
     main .imagine {
-        width: 5.3em;
+        width: 60vw;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-
     }
 
     main .discuta {
+        width: 56.4vw;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 4.99em;
     }
 
     main .desenhe {
+        width: 63.2vw;
         display: flex;
         flex-direction: column;
         align-items: flex-end;
-        width: 5.64em;
     }
 
     main h3 {
-        width: 9.8em;
+        width: 52.5vw;
         position: relative;
-        top: 20em;
+        top: 60vh;
         font-size: 1.2em;
     }
 
     main .secondSectionMain {
-        height: 239em;
+        height: 655vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
+        flex-wrap: wrap;
     }
 
-    main .secondDivMain{
-        height: 235em;
-        width: 18em;
+    main .thirdSectionMain{
+        height: 635vh;
+        width: 90vw;
         display: flex;
         flex-direction: column;
     }
 
     main .imgDesignes{
-        height: 17em;
-        width: 17em;
+        height: 50vh;
+        width: 80vw;
         transition: 0.5s;
     }
 
@@ -365,80 +335,70 @@ footer button{
     }
 
     footer {
-        height: 14em;
+        height: 40vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
         background-color: white;
-
-
     }
 
     footer .firstSectionFooter {
         width: 100%;
-        height: 5em;
+        height: 12vh;
         display: flex;
         flex-direction: row;
         justify-content: center;
-
-
     }
 
-   
-
-    footer .firstDivFooter {
-        width: 17em;
+    footer .secondSectionFooter {
+        height: 7vh;
+        width: 90vw;
         display: flex;
         flex-direction: row;
         justify-content: space-evenly;
         background-color: #7FDBD4;
-
-
     }
 
- footer .redesSociais{
-        height: 1.8em;
+    footer .redesSociais{
+        height: 4vh;
     }
 
-    footer .secondSectionFooter {
-        width: 17em;
-        height: 9.8em;
+    footer .thirdSectionFooter {
+        height: 30vh;
+        width: 90vw;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
-
-
+        justify-content: center;
     }
 
     footer .copyright {
-        width: 10em;
+        width: 30vw;
         font-size: 0.9em;
-
     }
 
     footer .exclusivo {
-        width: 14em;
-        height: 5em;
+        height: 10vh;
+        width: 50vw;
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
-
     }
 
     footer button {
         display: initial;
-        cursor: pointer;
-        width: 4em;
-        color: #CCCCCC;
+        height: 5vh;
+        width: 22vw;
+        position: relative;
+        top: -12.5vh;
+        right: -66.8vw;
         font-size: 1.2em;
         font-weight: 400;
         font-family: 'Montserrat', sans-serif;
+        color: #CCCCCC;
         background-color: #333333;
         border: #707070;
-        position: relative;
-        top: -4.5em;
-        right: -9.8em;
-
+        cursor: pointer;
     }
 }
